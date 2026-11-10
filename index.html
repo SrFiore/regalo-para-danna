@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ecdcd6">
+    <meta name="description" content="Un pequeño espacio hecho con cariño para Danna.">
+    <title>Para Danna ❤</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient ambient--pink" aria-hidden="true"></div>
+    <div class="ambient ambient--gold" aria-hidden="true"></div>
+    <div class="background-grain" aria-hidden="true"></div>
+
+    <main class="page-shell">
+        <section class="login-card" aria-labelledby="page-title">
+            <div class="card-topline">
+                <span class="topline-mark" aria-hidden="true"></span>
+                <span>UN ESPACIO HECHO CON CARIÑO</span>
+                <span class="topline-mark" aria-hidden="true"></span>
+            </div>
+
+            <div class="monogram-wrap" aria-hidden="true">
+                <span class="monogram-ring"></span>
+                <span class="monogram">D</span>
+                <svg class="monogram-spark" viewBox="0 0 28 28" fill="none">
+                    <path d="M14 2.5 16.2 11.8 25.5 14 16.2 16.2 14 25.5 11.8 16.2 2.5 14 11.8 11.8 14 2.5Z" stroke="currentColor" stroke-width="1.1" />
+                </svg>
+            </div>
+
+            <p class="eyebrow">UN DETALLE PARA TI</p>
+            <h1 id="page-title">Bienvenida, <em>Danna</em></h1>
+            <p class="intro-copy">
+                Hay cariño que cruza cualquier distancia. Este pequeño rincón guarda una parte de él, hecha especialmente para ti.
+            </p>
+
+            <div class="gold-divider" aria-hidden="true"><span></span><i></i><span></span></div>
+
+            <form id="login-form" class="login-form" novalidate>
+                <div class="field-group">
+                    <label for="username">Tu usuario</label>
+                    <div class="input-shell">
+                        <svg class="field-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <circle cx="12" cy="8" r="3.25" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M5.5 19c.55-3.15 2.75-4.75 6.5-4.75s5.95 1.6 6.5 4.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        <input
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder="El usuario que te compartieron"
+                            autocomplete="username"
+                            autocapitalize="none"
+                            spellcheck="false"
+                            required
+                            aria-describedby="form-message"
+                        >
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label for="password">Tu contraseña</label>
+                    <div class="input-shell">
+                        <svg class="field-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                            <rect x="5.25" y="10" width="13.5" height="10" rx="2" stroke="currentColor" stroke-width="1.5" />
+                            <path d="M8.25 10V7.25a3.75 3.75 0 0 1 7.5 0V10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            <path d="M12 14v2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                        </svg>
+                        <input
+                            type="password"
+                            id="password"
+                            name="password"
+                            placeholder="Escribe tu contraseña"
+                            autocomplete="current-password"
+                            required
+                            aria-describedby="form-message"
+                        >
+                        <button class="password-toggle" type="button" id="togglePassword" aria-label="Mostrar contraseña" aria-pressed="false" aria-controls="password" title="Mostrar contraseña">
+                            <svg class="eye-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                                <path d="M2.8 12s3.2-5.2 9.2-5.2 9.2 5.2 9.2 5.2-3.2 5.2-9.2 5.2S2.8 12 2.8 12Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                <circle cx="12" cy="12" r="2.35" stroke="currentColor" stroke-width="1.6" />
+                                <path class="eye-slash" d="M4 4 20 20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" id="btn-entrar" class="submit-button">
+                    <span class="button-label">Entrar a mi regalo</span>
+                    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                        <path d="M4.5 12h14m-5.5-5.5L18.5 12 13 17.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="card-footer">
+                <span class="footer-line"></span>
+                <p>Con pequeños detalles, mucho amor <span aria-hidden="true">♡</span></p>
+                <span class="footer-line"></span>
+            </div>
+
+            <svg class="strawberry-detail" viewBox="0 0 62 72" fill="none" aria-hidden="true">
+                <path d="M31 17c-3-8-10-10-15-8 2 6 7 10 15 10M31 17c3-8 10-10 15-8-2 6-7 10-15 10M31 17c-1-8 2-13 6-15" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M31 18c-8-5-21 0-21 13 0 15 14 29 21 34 7-5 21-19 21-34 0-13-13-18-21-13Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" />
+                <path d="m22 28 1 2m15-2 1 2m-10 7 1 2m-9 6 1 2m18-2 1 2m-10 7 1 2" stroke="currentColor" stroke-width="1.45" stroke-linecap="round" />
+            </svg>
+        </section>
+
+        <p class="page-caption">UN LUGAR PARA SENTIRTE CERQUITA DE QUIENES TE QUIEREN</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
